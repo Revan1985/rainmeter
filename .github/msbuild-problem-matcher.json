@@ -1,0 +1,19 @@
+{
+    "problemMatcher": [
+        {
+            "owner": "rainmeter",
+            "pattern": [
+                {
+                    "regexp": "^(\w:\\.*)\((\d+),(\d+)\):\s(warning|error)\s(\w\d+):\s(.*)\s\[(\w:\\.*)\]",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "code": 5,
+                    "message": 6,
+                    "fromPath": 7
+                }
+            ]
+        }
+    ]
+}

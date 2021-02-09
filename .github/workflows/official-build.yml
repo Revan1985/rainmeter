@@ -30,6 +30,8 @@ jobs:
 
       - name: Run Build.bat
         run: |
+          echo "::add-matcher::.github/msbuild-problem-matcher.json"
+
           cd Build
           Build.bat %RAINMETER_BUILD_TYPE% %RAINMETER_BUILD_VERSION:.= % %GITHUB_SHA%
         shell: cmd

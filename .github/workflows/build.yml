@@ -18,6 +18,8 @@ jobs:
 
       - name: Run Build.bat
         run: |
+          echo "::add-matcher::.github/msbuild-problem-matcher.json"
+
           cd Build
           Build.bat beta 0 0 0 0 %GITHUB_SHA%
         shell: cmd
